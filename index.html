@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
   </head>
-  <body class="no-scroll">
+  <body >
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -80,7 +80,7 @@
             >
           </div>
 
-          <img class="intro__photo" src="images/intro.jpeg" alt="" />
+          <img class="intro__photo" src="images/intro.jpg" alt="" />
         </div>
       </div>
     </section>
@@ -627,7 +627,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal">
+    <div class="modal" style="display: none">
       <div class="modal__dialog">
         <button class="modal__close" type="button">
           <img src="images/social/icons8-close.svg" alt="" />
@@ -658,6 +658,59 @@
               <button type="button" class="modal-work__btn">Previous</button>
               <button type="button" class="modal-work__btn">Next</button>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" >
+      <div class="modal__dialog modal__dialog--sm">
+        <button class="modal__close" type="button">
+          <img src="images/social/icons8-close.svg" alt="" />
+        </button>
+
+        <div class="contact">
+          <div class="contact__left">
+            <h3 class="modal__title">Let's talk</h3>
+            <h4 class="modal__subtitle">
+              Call me or send me request
+            </h4>
+
+            <div class="contact__section">
+              <span class="conctacts-link-type"> Tel:</span>
+              <a class="telephone-item" href="tel:380939984784"
+                >+38 093 998 47 84 - Ukraine, <br />
+                +48 575 198 240 - Poland.
+              </a>
+              <div class="social-links">
+                <a href="https://t.me/YuriiBerezan" class="telegram_link">
+                  <img src="images/social/telegram.png" class="telegram_icon" alt="telegram_link" />
+                </a>
+                <a href="viber://chat?number=+380939984784" class="viber_link">
+                  <img src="images/social/viber.png" class="viber_icon" alt="viber_link" />
+                </a>
+                <a href="tel:380939984784" class="phone_link_icon">
+                  <img src="images/social/phone-icon.svg" class="phone_icon" alt="phone_link" />
+                </a>
+                <a href="https://wa.me/380939984784" class="whatsup_link">
+                  <img src="images/social/whatsup.png" class="whatsup_icon" alt="whatsup_link" />
+                </a>
+              </div>
+            </div>
+            <div class="contact__email">
+              <span class="conctacts-link-type">Email: </span>
+              <a class="email-item" href="mailto: Yurareg2010@gmail.com">Yurareg2010@gmail.com</a>
+            </div>
+            <form  class="form" action="/" method="post">
+              <div class="form__group">
+              <label for="input-email" class="form__label">Adress e-mail</label>
+              <input type="text" name="input-email" class="fornm__input" placeholder="Adress e-mail" id="input-email">
+            </div>
+            <div class="form__group">
+              <label for="input-text" class="form__label">Request</label>
+             <textarea name="input-text" id="input-text" class="form__textarea" placeholder="Type your request"></textarea>
+            </div>
+            <button class="btn">send</button>
+            </form>
           </div>
         </div>
       </div>
