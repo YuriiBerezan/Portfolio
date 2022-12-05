@@ -1,25 +1,29 @@
 //main: ../style.less
-.contact{
-    display: flex;
-    background-image: url(/images/contact.jpg);
-    background-position: right center;
-    background-repeat: no-repeat;
+.contact {
+  display: flex;
+}
+.contact__left {
+  width: 47%;
+  padding: 1.5rem;
+}
+.contact__right {
+  width: 53%;
+  margin: auto 1rem;
+}
+.contact__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
-
+.contact__section {
+  margin: 1rem 0;
 }
-.contact__left{
-width: 47%;
-padding: 1.5rem;
+.contact__email {
+  margin-bottom: 1rem;
 }
-
-.contact__section{
-    margin: 1rem 0;
-}
-.contact__email{
-    margin-bottom: 2rem;
-}
-.social-links{
-    margin-top: 0.5rem;
+.social-links {
+  margin-top: 0.5rem;
 }
 .telegram_icon,
 .viber_icon,
@@ -32,7 +36,7 @@ padding: 1.5rem;
 
 .telegram_link,
 .viber_link,
-.phone_link_icon,
+.phone_link,
 .whatsup_link {
   text-decoration: none;
 }
@@ -40,11 +44,11 @@ padding: 1.5rem;
 .telegram_icon,
 .viber_icon,
 .phone_icon {
-  margin-right: 28px;
+  margin-right: 18px;
 }
 
 .telegram_icon {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .telephone-item,
@@ -52,7 +56,7 @@ padding: 1.5rem;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  margin-left: 10px;
+  // margin-left: 10px;
   color: tomato;
-  opacity: 0.5;
+  // opacity: 0.5;
 }
