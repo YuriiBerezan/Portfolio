@@ -28,13 +28,21 @@
               <div class="user__prof">Front-End</div>
             </div>
           </div>
-          <div class="nav">
+          <nav class="nav" id="nav">
             <a href="" class="nav__link">Work</a>
             <a href="" class="nav__link">About Me</a>
             <a href="" class="nav__link">Blog</a>
             <a href="" class="nav__link">Contact</a>
-            <a href="" class="nav__link nav__link--btn">Hire Me</a>
-          </div>
+            <a
+              href="#"
+              class="nav__link nav__link--btn"
+              data-modal="#modal__hire_me"
+              >Hire Me</a
+            >
+          </nav>
+          <button class="burger" type="button" id="navToggle">
+            <span class="burger__item">Menu</span>
+          </button>
         </div>
       </div>
     </header>
@@ -71,7 +79,9 @@
                 <img src="images/social/icons8-github.svg" alt="" />
               </a>
             </div>
-            <button class="btn" type="button">Hire me</button>
+            <button class="btn" data-modal="#modal__hire_me" type="button">
+              Hire me
+            </button>
             <a
               href="https://yuriiberezan.github.io/resume/"
               target="_blank"
@@ -216,7 +226,9 @@
                 consequatur, quasi culpa modi doloribus. Ad.
               </p>
             </div>
-            <button class="btn" type="button">Hire me</button>
+            <button class="btn" type="button" data-modal="#modal__hire_me">
+              Hire me
+            </button>
             <a
               href="https://yuriiberezan.github.io/resume/"
               target="_blank"
@@ -608,9 +620,9 @@
         </div>
       </div>
     </footer>
-    <div class="modal" style="display: none">
+    <!-- <div class="modal" id="modal__project">
       <div class="modal__dialog">
-        <button class="modal__close" type="button">
+        <button class="modal__close" type="button" data-close>
           <img src="images/social/icons8-close.svg" alt="" />
         </button>
         <div class="modal-work">
@@ -642,10 +654,10 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal" style="display: none">
+    </div>-->
+    <div class="modal" id="modal__hire_me">
       <div class="modal__dialog modal__dialog--sm">
-        <button class="modal__close" type="button">
+        <button class="modal__close" type="button" data-close>
           <img src="images/social/icons8-close.svg" alt="" />
         </button>
 

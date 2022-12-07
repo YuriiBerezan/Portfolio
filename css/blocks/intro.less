@@ -4,9 +4,13 @@
 }
 .intro__inner {
   display: flex;
-  padding-bottom: 120px;
+
+  padding-bottom: 6rem;
   border-bottom: 1px solid fade(@gray, 30%);
   position: relative;
+  @media @tablet {
+    padding-bottom: 4.5rem;
+  }
 }
 
 .intro__content {
@@ -17,6 +21,9 @@
   font-size: 2.13rem;
   color: @black;
   font-weight: 200;
+  @media @tablet {
+    font-size: 1.5rem;
+  }
 }
 
 .intro__title {
@@ -24,6 +31,9 @@
   color: @black;
   font-weight: 700;
   margin-bottom: 5px;
+  @media @tablet {
+    font-size: 2rem;
+  }
 }
 
 .intro__text {
@@ -38,6 +48,10 @@
   right: 0;
   max-width: 100%;
   height: auto;
+
+  @media @tablet {
+    width: 280px;
+  }
   // width: 350px;
   // height: 450px;
 }
