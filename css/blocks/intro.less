@@ -4,17 +4,23 @@
 }
 .intro__inner {
   display: flex;
-
+  // padding-top: 2rem;
   padding-bottom: 9rem;
   border-bottom: 1px solid fade(@gray, 30%);
   position: relative;
   @media @tablet {
-    padding-bottom: 4.5rem;
+    padding-bottom: 5rem;
   }
 }
 
 .intro__content {
   width: 50%;
+  @media @mobile {
+    width: 60%;
+  }
+  @media @mobile-sm {
+    width: 100%;
+  }
 }
 
 .intro__subtitle {
@@ -44,13 +50,20 @@
 
 .intro__photo {
   position: absolute;
-  bottom: 0;
+  // bottom: 0;
   right: 0;
   max-width: 100%;
-  height: auto;
+  // height: auto;
 
+  @media @mobile {
+    width: 230px;
+  }
   @media @tablet {
-    width: 280px;
+    width: 310px;
+  }
+
+  @media @mobile-sm {
+    display: none;
   }
   // width: 350px;
   // height: 450px;

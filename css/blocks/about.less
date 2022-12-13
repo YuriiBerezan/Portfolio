@@ -1,17 +1,38 @@
 //main: ../style.less
 .about {
   margin: 8.4rem 0;
+  @media @tablet {
+    margin: 4rem 0;
+  }
 }
 .about__inner {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 1090px;
 }
-.about__content {
-  width: 50%;
-  padding-left: 2.2rem;
-  //   margin-top: 1.5rem;
-}
+.about__content,
 .about__photo {
   width: 50%;
+  @media @tablet {
+    width: 100%;
+  }
+
+  //   margin-top: 1.5rem;
+}
+.about__content {
+  padding-left: 2.2rem;
+  @media @tablet {
+    order: 1;
+    margin-bottom: 2rem;
+    padding-left: 0;
+  }
+}
+.about__photo {
+  position: relative;
+  @media @tablet {
+    order: 2;
+  }
+
   //   height: auto;
 }
 .about__title {
@@ -19,6 +40,9 @@
   font-weight: 700;
   color: @black;
   text-transform: uppercase;
+  @media @mobile {
+    font-size: 1.5rem;
+  }
 }
 .about__bigtitle {
   text-transform: uppercase;
@@ -27,6 +51,12 @@
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 1.4rem;
+  @media @mobile {
+    font-size: 3rem;
+  }
+  @media @notebook {
+    font-size: 4rem;
+  }
 }
 .about__text {
   font-size: 0.8rem;
@@ -38,7 +68,14 @@
 }
 
 .about__img {
+  position: absolute;
+  bottom: 0;
   display: block;
   max-width: 100%;
-  height: auto;
+  @media @tablet {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+  }
+  // height: auto;
 }
