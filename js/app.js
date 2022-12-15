@@ -1,6 +1,6 @@
 $(function () {
-// let nav = $("#nav");
-//     let navToggle = $("#navToggle");
+    let nav = $("#nav");
+let navToggle = $("#navToggle");
  
 
 /*Filter*/
@@ -66,8 +66,8 @@ $(function () {
     })
 
 
-    // navToggle.on("click", function (event) {
-    //     event.preventDefault();
-    //     nav.toggleClass("show__menu");
-    // });
+    navToggle.on("click", function (event) {
+        event.preventDefault();
+        nav.toggleClass("show__menu");
+    });
 });

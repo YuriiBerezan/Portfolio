@@ -1,6 +1,9 @@
 //main: ../style.less
 .intro {
-  padding-top: 50px;
+  margin-top: 70px;
+  @media @mobile {
+    margin-top: 120px;
+  }
 }
 .intro__inner {
   display: flex;
@@ -9,7 +12,7 @@
   border-bottom: 1px solid fade(@gray, 30%);
   position: relative;
   @media @tablet {
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -50,16 +53,21 @@
 
 .intro__photo {
   position: absolute;
-  // bottom: 0;
+  bottom: 0;
   right: 0;
   max-width: 100%;
   // height: auto;
 
-  @media @mobile {
-    width: 230px;
+  @media (min-width: 566px) and (max-width: 767px) {
+    width: 220px;
+    bottom: 30%;
+    right: 0;
   }
-  @media @tablet {
-    width: 310px;
+
+  @media (min-width: 767px) and (max-width: 991px) {
+    width: 350px;
+    bottom: 20%;
+    right: 0;
   }
 
   @media @mobile-sm {
