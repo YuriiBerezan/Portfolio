@@ -5,15 +5,24 @@
 .contact__left {
   width: 47%;
   padding: 1.5rem;
+  @media @mobile-sm {
+    width: 100%;
+  }
 }
 .contact__right {
   width: 53%;
   margin: auto 1rem;
+  @media @mobile-sm {
+    width: 0%;
+  }
 }
 .contact__photo {
   display: block;
   width: 100%;
   height: auto;
+  @media @mobile-sm {
+    display: none;
+  }
 }
 
 .contact__section {
@@ -45,10 +54,16 @@
 .viber_icon,
 .phone_icon {
   margin-right: 18px;
+  @media @mobile-sm {
+    margin-right: 12px;
+  }
 }
 
 .telegram_icon {
   margin-left: 20px;
+  @media @mobile-sm {
+    margin-left: 8px;
+  }
 }
 
 .telephone-item,
@@ -59,4 +74,9 @@
   // margin-left: 10px;
   color: tomato;
   // opacity: 0.5;
+  // @media @mobile-sm {
+  //   font-weight: 400;
+  //   font-size: 11px;
+  //   line-height: 18px;
+  // }
 }

@@ -1,6 +1,8 @@
 $(function () {
     let nav = $("#nav");
-let navToggle = $("#navToggle");
+    let navToggle = $("#navToggle");
+    // let introH = intro.innerHeight();
+    // let scrollPos = $(window).scrollTop();
  
 
 /*Filter*/
@@ -69,5 +71,23 @@ let navToggle = $("#navToggle");
     navToggle.on("click", function (event) {
         event.preventDefault();
         nav.toggleClass("show__menu");
+    });
+
+
+    
+     $("[data-scroll]").on("click", function (event) {
+       
+        event.preventDefault();
+
+        let elemntId = $(this).data('scroll');
+
+        let elementOffset = $(elemntId).offset().top;
+        nav.removeClass("show__menu");
+        console.log(elementOffset);
+
+        $("html , body").animate({
+            scrollTop: elementOffset -100
+        }, 700);
+
     });
 });
